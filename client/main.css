@@ -1,0 +1,9 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.box {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
