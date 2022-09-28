@@ -11,7 +11,7 @@ export const TaskForm = () => {
 
     TasksCollection.insert({
       text: text.trim(),
-      createdAt: new Date(),
+      createdAt: new Date()
     });
 
     setText("");
@@ -21,12 +21,12 @@ export const TaskForm = () => {
     <form className="task-form" onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Type to add new tasks"
+        placeholder="Añade nuevas tareas"
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
 
-      <button type="submit">Add Task</button>
+      <button type="submit">Añadir Tarea</button>
     </form>
   );
 };

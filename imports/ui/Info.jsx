@@ -14,26 +14,27 @@ export const Info = () => {
   return (
     <>
       <div>
-        <h2>Learn Meteor!</h2>
+        <h2>Aprende Meteor! 😊</h2>
         <ul>
           {links.map((link) => (
-            <li key={link._id}>
+            <p key={link._id}>
               <a href={link.url} target="_blank">
                 {link.title}
               </a>
-            </li>
+            </p>
           ))}
         </ul>
       </div>
       <div>
-        <h3>Mascotas OwO</h3>
+        <h3>Lista de Mascotas </h3>
         <ul>
           {mascotas.map((m) => (
-            <li key={m._id}>
+            <p key={m._id}>
               <p>
-                {m.nombre} | {m.edad} | {m.mascota}
+                Nombre Dueño: {m.nombre} | Edad mascota: {m.edad} | Nombre
+                Mascota: {m.mascota}
               </p>
-            </li>
+            </p>
           ))}
         </ul>
       </div>

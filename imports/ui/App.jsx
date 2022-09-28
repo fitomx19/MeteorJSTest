@@ -5,6 +5,7 @@ import "../../public/main.css";
 import { TasksCollection } from "/imports/api/TasksCollection";
 import { TaskForm } from "./TaskForm";
 import { Task } from "./Task";
+import { useTracker } from "meteor/react-meteor-data";
 
 export const App = () => {
   const tasks = useTracker(() =>
@@ -17,15 +18,15 @@ export const App = () => {
         <Info />
       </div>
 
-      <div>
+      <div className="center">
         <p>Nombre</p>
         <TaskForm />
 
-        <ul>
+        <p>
           {tasks.map((task) => (
             <Task key={task._id} task={task} />
           ))}
-        </ul>
+        </p>
       </div>
     </>
   );
